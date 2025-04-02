@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGOS</title>
+    <link rel="stylesheet" href="/CSS/pago.css">
+    <link rel="shortcut icon" href="/IMAGENES/street_food_logo.png" type="image/x-icon">
+</head>
+<body>
+       <!-- PARTE SUPERIORPAGINA  -->
+       <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="/IMAGENES/street_food_logo.png" alt="Street Food Logo">
+            </a>
+        </div>
+    
+        <nav class="contenedor-menu">
+            <ul class="barra-navegacion"> 
+                <li><a href="menu.html">MENÚ</a></li>
+                <li><a href="sedes.html">SEDES</a></li>
+                <li><a href="contactenos.html">CONTÁCTENOS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Barra de búsqueda -->
+        <div class="search-container">
+            <input type="text" placeholder="Buscar" class="search-bar">
+            <button class="search-button"></button>
+        </div>
+    
+        <!-- Botón de inicio de sesión -->
+        <div class="login-container">
+            <a href="login.html" class="login-button">LOGIN</a>
+        </div>
+    </header>
+    <hr class="salto">
+    <div class="eslogan">
+        <h2>HAMBURGUESAS</h2>
+    </div>
+    <hr class="salto">
+    <div class="contenedor-pago">
+        <h2>Pago Seguro</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="nombre">Nombre en la tarjeta</label>
+                <input type="text" id="nombre" placeholder="" required>
+            </div>
+
+            <div class="input-group">
+                <label for="tarjeta">Número de tarjeta</label>
+                <input type="text" id="tarjeta" placeholder="" required>
+            </div>
+
+            <div class="fila">
+                <div class="input-group">
+                    <label for="expiracion">Fecha de expiración</label>
+                    <input type="date" id="expiracion" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="123" required>
+                </div>
+            </div>
+            <a href="/INDEX/menu.html"><button class="back-button"> Volver</button></a>
+            <button type="submit" class="boton-pagar">Pagar</button>
+        </form>
+    </div>
+    <hr class="salto">
+    <footer>
+        <section class="pie-pagina">
+            <div class="pie-1">   
+                <img src="/IMAGENES/street_food_logo.png" alt="logo empresa">
+                <p>© 2025 STREET FOOD. Todos los derechos reservados.</p>
+            </div>
+            <div class="pie-2">
+                 <li><a href="">POLITICA DE PRIVACIDAD</a></li>
+                 <li><a href="">TERMINOS Y CONDICIONES</a></li>
+            </div>
+            <div class="pie-3">
+                 <h3>!SIGUENOS¡</h3>
+                 <a href="https://www.facebook.com/"><img src="/IMAGENES/icons8-facebook-nuevo-50.png" alt="facebook"></a><a href="https://www.instagram.com/"><img src="/IMAGENES/logotipo-de-instagram.png" alt="instagram"></a><a href="https://x.com/twitter?lang=es"><img src="/IMAGENES/icons8-twitterx-50.png" alt="twitter"></a>
+
+            </div>
+        </section>
+
+    </footer>
+    
+</body>
+</html>

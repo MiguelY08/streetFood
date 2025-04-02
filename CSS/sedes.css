@@ -1,0 +1,223 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+ PARTE SUPERIOR
+
+body{
+    background-color: #2e1f00;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #800000; 
+    padding: 15px 30px;
+    
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Barra de navegación */
+.contenedor-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.barra-navegacion {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+
+.barra-navegacion li {
+    display: inline;
+}
+
+.barra-navegacion a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+
+}
+
+.barra-navegacion a:hover {
+    background-color: #EC3337;
+    border-radius: 5px;
+}
+
+/* Barra de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-bar {
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* Botón de inicio de sesión */
+.login-container {
+    margin-left: 20px;
+}
+
+.login-button {
+    text-decoration: none;
+    background-color: #EC3337;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #b22c2f;
+}
+
+.salto1{
+
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    border: 1px solid #EC3337;
+}
+
+.eslogan {
+    display: block;
+    color: white;
+    width: 100%;
+    height:80px;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* SECCION SEDES */
+
+.contenedor-sedes{
+    position: relative;
+    background-image: url(/IMAGENES/madera4k.jpg);
+    width: 100%;
+    height: 403px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+   
+}
+
+.contenedor-puntos h1{
+    font-size: 40px;
+    padding-bottom: 60px;
+}
+
+.contenedor-puntos{
+    font-size: 20px;
+}
+
+.contenedor-puntos .contenedor-mapa{
+    width: 50%;
+    text-align: center;
+}
+
+.contenedor-mapa iframe{
+    height: 350px;
+}
+
+.contenedor-puntos  li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.contenedor-puntos li{
+    padding-bottom: 20px; /* Espacio entre elementos */
+}
+
+.contenedor-puntos h3{
+    padding-bottom: 40px;
+}
+
+.contenedor-puntos a:hover {
+    color: white;
+}
+/* PARTE INFERIOR FOODER */
+.pie-pagina{
+    width: 100%;
+    height: 163px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #800000 ;
+
+}
+
+.pie-1 img{
+    height: 80px;
+    width: auto;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.pie-1 p{
+    color: white;
+}
+
+.pie-2{
+    margin-top:10px;
+
+
+}
+.pie-2 li a{
+    color: white;
+    text-decoration: none;
+    margin-right: 200px;
+}
+
+.pie-2 :hover{
+    transform: scale(1.5);
+    color: black;
+}
+.pie-3{
+    margin-top: 10px;
+    margin-right: 10px;
+    color: white;
+}
+.pie-3 img {
+    width: 45px;
+    cursor: pointer;
+}
+

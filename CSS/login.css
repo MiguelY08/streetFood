@@ -1,0 +1,291 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+ PARTE SUPERIOR
+
+body{
+    display: flex;
+    justify-content: space-between; /* Separa los formularios */
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%; /* Espacio a los lados */
+}
+
+/* Header */
+.header {
+     position: fixed; /* Fija el nav en la parte superior */
+     top: 0; /* Lo mantiene en la parte superior */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: #800000; /* Mantiene el color del navbar */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Efecto de sombra */
+    z-index: 1000; /* Se mantiene sobre los demás elementos */
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Barra de navegación */
+.contenedor-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.barra-navegacion {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+
+.barra-navegacion li {
+    display: inline;
+}
+
+.barra-navegacion a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+
+}
+
+.barra-navegacion a:hover {
+    background-color: #EC3337;
+    border-radius: 5px;
+}
+
+/* Barra de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-bar {
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Botón de inicio de sesión */
+.login-container {
+    margin-left: 20px;
+}
+
+.login-button {
+    text-decoration: none;
+    background-color: #EC3337;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #b22c2f;
+}
+
+.eslogan {
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+}
+
+.salto{
+
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    border: 1px solid #EC3337;
+}
+
+/* Botón de inicio de sesión */
+
+.login-button {
+    text-decoration: none;
+    background-color: #EC3337;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #b22c2f;
+}
+
+.eslogan {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 140px;
+}
+
+.eslogan h2{
+    color: white;
+
+}
+
+.salto{
+
+    width: 100%;
+    height: 10px;
+    margin-top: 0px;
+    background-color: black;
+    border: 1px solid #EC3337;
+}
+
+/* Contenedor del login */
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-image: url(/IMAGENES/madera2.jpg);
+}
+
+section {
+    width: 40%; /* Cada formulario ocupa el 40% del ancho */
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+/* Ubicación de las secciones */
+
+
+/* Títulos */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos de los inputs */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botones */
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-btn {
+    background: #28a745;
+}
+
+.registro .login {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.registro a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.pie-pagina{
+    width: 100%;
+    padding: 42px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #800000 ;
+
+}
+
+.pie-1 img{
+    height: 80px;
+    width: auto;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.pie-1 p{
+    color: white;
+}
+
+.pie-2{
+    margin-top:10px;
+
+
+}
+.pie-2 li a{
+    color: white;
+    text-decoration: none;
+    margin-right: 200px;
+}
+
+.pie-2 :hover{
+    transform: scale(1.5);
+    color: black;
+}
+.pie-3{
+    margin-top: 10px;
+    margin-right: 10px;
+    color: white;
+}
+.pie-3 img {
+    width: 45px;
+    cursor: pointer;
+}

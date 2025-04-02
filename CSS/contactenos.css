@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+ PARTE SUPERIOR
+
+body{
+    background-color: #b22222; /* Rojo fuerte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    height: 100vh; /* Ocupar toda la pantalla */
+    width: 100vw; /* Asegurar que cubre todo el ancho */
+}
+
+/* Header */
+.header {
+     position: fixed; /* Fija el nav en la parte superior */
+     top: 0; /* Lo mantiene en la parte superior */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: #800000; /* Mantiene el color del navbar */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Efecto de sombra */
+    z-index: 1000; /* Se mantiene sobre los demás elementos */
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Barra de navegación */
+.contenedor-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.barra-navegacion {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+
+.barra-navegacion li {
+    display: inline;
+}
+
+.barra-navegacion a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+
+}
+
+.barra-navegacion a:hover {
+    background-color: #EC3337;
+    border-radius: 5px;
+}
+
+/* Barra de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-bar {
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Botón de inicio de sesión */
+.login-container {
+    margin-left: 20px;
+}
+
+.login-button {
+    text-decoration: none;
+    background-color: #EC3337;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #b22c2f;
+}
+
+.eslogan {
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 140px;
+}
+
+.salto1{
+
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    border: 1px solid #EC3337;
+}
+
+
+/* FORMULARIO */
+
+.eslogan {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-formulario {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    color: black;
+}
+
+.contenedor-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contenedor-formulario label {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-formulario input {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contenedor-formulario input[type="submit"] {
+    background-color: #EC3337;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.contenedor-formulario input[type="submit"]:hover {
+    background-color: #b22c2f;
+}
+/* PARTE INFERIOR FOODER */
+.pie-pagina{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #800000 ;
+
+}
+
+.pie-1 img{
+    height: 80px;
+    width: auto;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.pie-1 p{
+    color: white;
+}
+
+.pie-2{
+    margin-top:10px;
+
+
+}
+.pie-2 li a{
+    color: white;
+    text-decoration: none;
+    margin-right: 200px;
+}
+
+.pie-2 :hover{
+    transform: scale(1.5);
+    color: black;
+}
+.pie-3{
+    margin-top: 10px;
+    margin-right: 10px;
+    color: white;
+}
+.pie-3 img {
+    width: 45px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.changa-uniquifier {
+    font-family: "Changa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+body{
+    background-color: white;
+}
+
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    position: fixed;
+    /* background-image: url(hamburguesa-carne-queso-irresistible_1170794-13370.jpg); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10px;
+    color: white;
+
+}
+
+.cont-menu{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.cont-menu li a {
+    gap: 30px;
+    text-decoration: none;
+    color: beige;
+    
+
+}
+
+.cont-menu li:hover{
+    transform: scale(1.50);
+}
+.header .logo img{
+    height: 80px;
+    width: auto;
+    border-radius: 15px;
+}
+
+.header .btn button {
+    width:100px ;
+    height:30px ;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    transform: scale(1);
+    cursor: pointer;
+}
+.encabezado {
+    animation: carrusel 20s infinite;
+    width: 100%; 
+    height: 100vh; 
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.encabezado .eslogan h2 {
+    margin-top: 200px;
+}
+
+    @keyframes carrusel {
+    0%{
+        background-image:url(DALL·E\ 2025-03-24\ 18.46.23\ -\ A\ high-definition\ promotional\ image\ for\ a\ burger\ restaurant\,\ featuring\ a\ delicious\ cheeseburger\ with\ a\ juicy\ beef\ patty\,\ melted\ cheddar\ cheese\,\ lettuc.jpg);
+    }
+    25%{
+        background-image:url(DALL·E\ 2025-03-24\ 18.46.33\ -\ A\ high-definition\ promotional\ image\ for\ a\ burger\ restaurant.\ The\ image\ features\ a\ special\ offer\ for\ gourmet\ burgers\ with\ vibrant\ colors\ and\ stylish\ te.jpg);
+    }
+    50%{
+        background-image:url(DALL·E\ 2025-03-24\ 18.46.42\ -\ A\ high-definition\ promotional\ image\ for\ a\ burger\ restaurant.\ The\ image\ features\ a\ special\ offer\ for\ gourmet\ burgers\ with\ vibrant\ colors\ and\ stylish\ te.jpg);
+    }
+    100%{
+        background-image:url(DALL·E\ 2025-03-24\ 18.46.49\ -\ A\ high-definition\ promotional\ image\ for\ a\ burger\ restaurant.\ The\ image\ features\ a\ special\ offer\ for\ gourmet\ burgers\ with\ vibrant\ colors\ and\ stylish\ te.jpg);
+}   }
+
+.salto {
+    height: 3vh;
+    width: 100%;
+    background-color: black;
+}
+
+.cont-principal {
+    max-width: 100%;
+    margin: auto;
+    padding: 40px 0;
+    gap: 20px;
+    display: grid;
+    grid-template-columns:1fr;
+    /* background-repeat: no-repeat; */
+    background-image: url(DALL·E\ 2025-03-25\ 14.23.39\ -\ A\ high-definition\ image\ of\ an\ urban\ graffiti\ wall\ with\ a\ wooden\ texture\,\ featuring\ warm\,\ earthy\ tones\ such\ as\ brown\,\ beige\,\ and\ deep\ reds.\ The\ graffit.jpg);
+}
+
+.cont-hamburguesas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 100px;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: center;
+    
+}
+
+.card {
+    width: 100%;
+    max-width: 250px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 5px solid black;
+    grid-template-rows: 1fr;
+    margin-bottom: auto;
+    transition: 0.5s;
+    position: relative;
+}
+.card:hover {
+    filter: brightness(30%); /* Reduce el brillo para oscurecer la imagen */
+}
+
+.textos{
+    height: 100%;
+    text-align: center;
+    color: white;
+    position: relative;
+    opacity: 0;
+    /* transform: translate(%); */
+    transition: 0.5s;
+
+    
+
+}
+
+.card:hover .textos{
+    opacity: 1;
+    visibility: visible;
+}
+
+.eslogan{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.boton2 button{
+    width:200px ;
+    height:50px ;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    transform: scale(1);
+    text-align: center;
+    transform: scale(1.0);
+    cursor: pointer;
+    position: relative;
+    left: 750px;
+    margin-top: 50px;
+    
+     
+}
+
+.btn2 :hover{
+    transform: scale(1.5);
+}
+
+.pie-pagina{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #2e1f00 ;
+    /* background-image: url(DALL·E\ 2025-03-25\ 14.23.39\ -\ A\ high-definition\ image\ of\ an\ urban\ graffiti\ wall\ with\ a\ wooden\ texture\,\ featuring\ warm\,\ earthy\ tones\ such\ as\ brown\,\ beige\,\ and\ deep\ reds.\ The\ graffit.jpg); */
+}
+
+.pie-1 img{
+    height: 80px;
+    width: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.pie-1 p{
+    color: white;
+}
+
+.pie-2{
+    margin-top:10px;
+  
+    
+}
+.pie-2 li a{
+    color: white;
+    text-decoration: none;
+}
+
+.pie-2 :hover{
+    transform: scale(1.5);
+    color: black;
+}
+.pie-3{
+    margin-top: 10px;
+    margin-right: 20px;
+    color: white;
+}
+.pie-3 img {
+    width: 45px;
+    cursor: pointer;
+}
+
+

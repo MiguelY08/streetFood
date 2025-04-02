@@ -1,0 +1,358 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+ PARTE SUPERIOR
+
+body{
+    background-color: #b22222; /* Rojo fuerte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    height: 100vh; /* Ocupar toda la pantalla */
+    width: 100vw; /* Asegurar que cubre todo el ancho */
+}
+
+/* Header */
+.header {
+     position: fixed; /* Fija el nav en la parte superior */
+     top: 0; /* Lo mantiene en la parte superior */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: #800000; /* Mantiene el color del navbar */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Efecto de sombra */
+    z-index: 1000; /* Se mantiene sobre los demás elementos */
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Barra de navegación */
+.contenedor-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.barra-navegacion {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+
+.barra-navegacion li {
+    display: inline;
+}
+
+.barra-navegacion a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+
+}
+
+.barra-navegacion a:hover {
+    background-color: #EC3337;
+    border-radius: 5px;
+}
+
+/* Barra de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-bar {
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Botón de inicio de sesión */
+.login-container {
+    margin-left: 20px;
+}
+
+.login-button {
+    text-decoration: none;
+    background-color: #EC3337;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #b22c2f;
+}
+
+.eslogan {
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+}
+
+.salto{
+
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    border: 1px solid #EC3337;
+}
+
+/* Botón de inicio de sesión */
+.login-container {
+    margin-left: 20px;
+}
+
+.login-button {
+    text-decoration: none;
+    background-color: #EC3337;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #b22c2f;
+}
+
+.eslogan {
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 140px;
+}
+
+.salto{
+
+    width: 100%;
+    height: 10px;
+    margin-top: 0px;
+    background-color: black;
+    border: 1px solid #EC3337;
+    margin-top: px;
+}
+
+/* SECCION HAMBURGUESAS */
+.contenedor-hamburguesas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%; /* Ahora ocupa todo el ancho disponible */
+    max-width: 100vw; /* Se asegura de que no haya bordes blancos */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    box-sizing: border-box; /* Evita que el padding agrande el tamaño total */
+}
+
+/* Estilos para cada tarjeta */
+.card {
+    background: white; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Evita que los elementos internos se salgan */
+    text-align: center; /* Centra el contenido */
+    padding: 20px; /* Espacio dentro de la tarjeta */
+    border: 1px solid black; /* Bordes negros */
+    cursor: pointer;
+}
+
+/* Ajustes para la imagen dentro de cada tarjeta */
+.card img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Evita deformaciones en la imagen */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Títulos dentro de cada tarjeta */
+.card h3 {
+    font-size: 18px; /* Tamaño de fuente */
+    margin: 10px 0; /* Espaciado */
+}
+
+/* Párrafos dentro de cada tarjeta */
+.card p {
+    color: #000000; /* Color negro para el texto */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+/* Estilos para los botones */
+.card a {
+    display: block; /* Hace que el enlace ocupe toda la línea */
+    background-color: red; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 10px; /* Espaciado superior */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Efecto hover en los botones */
+.card a:hover {
+    background-color: darkred; /* Cambia de color al pasar el mouse */
+}
+
+
+/* LISTA SECUNDARIA HAMBURGUESA */
+/* Ocultar el checkbox */
+.toggle-input {
+    display: none;
+}
+
+/* Botón "Ver más pizzas" */
+.boton-ver-mas {
+    display: inline-block;
+    background-color: #d2691e; /* Marrón madera */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease;
+    margin-bottom: 10px;
+}
+
+/* Efecto hover del botón */
+.boton-ver-mas:hover {
+    background-color: #a0522d; /* Marrón más oscuro */
+}
+
+/* Diseño para los productos cuando se despliegan */
+
+.escondidas {
+    display: grid;
+    background-color: #000000;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.preferidas img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Evita deformaciones en la imagen */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Títulos dentro de cada tarjeta */
+.preferidas h3 {
+    font-size: 18px; /* Tamaño de fuente */
+    margin: 10px 0; /* Espaciado */
+}
+
+/* Párrafos dentro de cada tarjeta */
+.preferidas p {
+    color: #000000; /* Color negro para el texto */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+/* Estilos para los botones */
+.preferidas a {
+    display: block; /* Hace que el enlace ocupe toda la línea */
+    background-color: red; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 10px; /* Espaciado superior */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Efecto hover en los botones */
+.preferidas a:hover {
+    background-color:darkred; /* Cambia de color al pasar el mouse */
+}
+/* PARTE INFERIOR FOODER */
+
+.pie-pagina{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #800000 ;
+
+}
+
+.pie-1 img{
+    height: 80px;
+    width: auto;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.pie-1 p{
+    color: white;
+}
+
+.pie-2{
+    margin-top:10px;
+
+
+}
+.pie-2 li a{
+    color: white;
+    text-decoration: none;
+    margin-right: 200px;
+}
+
+.pie-2 :hover{
+    transform: scale(1.5);
+    color: black;
+}
+.pie-3{
+    margin-top: 10px;
+    margin-right: 10px;
+    color: white;
+}
+.pie-3 img {
+    width: 45px;
+    cursor: pointer;
+}
+
