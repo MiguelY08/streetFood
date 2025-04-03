@@ -309,50 +309,69 @@ body{
 }
 /* PARTE INFERIOR FOODER */
 
-.pie-pagina{
-    width: 100%;
-    padding: 20px;
+/* PARTE INFERIOR FOODER */
+.footer {
+    background-color: #800000; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
     display: flex;
     justify-content: space-between;
-    list-style: none;
-    background-color: #800000 ;
-
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
 }
 
-.pie-1 img{
+.footer-logo img {
     height: 80px;
-    width: auto;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
 }
 
-.pie-1 p{
-    color: white;
-}
-
-.pie-2{
-    margin-top:10px;
-
-
-}
-.pie-2 li a{
+.footer-info p, .footer-info a {
     color: white;
     text-decoration: none;
-    margin-right: 200px;
+    font-size: 14px;
 }
 
-.pie-2 :hover{
-    transform: scale(1.5);
-    color: black;
-}
-.pie-3{
-    margin-top: 10px;
-    margin-right: 10px;
-    color: white;
-}
-.pie-3 img {
-    width: 45px;
-    cursor: pointer;
+.footer-info a:hover {
+    text-decoration: underline;
 }
 
+.footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .contenedor-hamburguesas {
+        grid-template-columns: repeat(1, 1fr); /* Solo una columna */
+    }
+
+    .header {
+        flex-direction: column; /* Ajustar el header */
+        text-align: center;
+    }
+
+    .barra-navegacion {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-container {
+        width: 100%;
+        justify-content: center;
+    }
+}
