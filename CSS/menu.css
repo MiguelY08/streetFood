@@ -171,6 +171,11 @@ body{
     border: 1px solid #EC3337;
     margin-top: px;
 }
+.carrito {
+    width: 10px;
+    padding-left: 100px ;
+}
+
 
 /* SECCION HAMBURGUESAS */
 .contenedor-hamburguesas {

@@ -144,6 +144,11 @@ body{
     margin-top: 20px;
     
 }
+.carrito {
+    width: 10px;
+    padding-left: 100px ;
+}
+
 
 /* Título */
 h2 {
