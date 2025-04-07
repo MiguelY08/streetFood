@@ -40,39 +40,37 @@
         </div>
     </header>
     <hr class="salto">
-    <div class="eslogan">
-        <h2>HAMBURGUESAS</h2>
-    </div>
     <hr class="salto">
-    
-    <div class="contenedor-pago">
-        <h2>Pago Seguro</h2>
-        <form action="#" method="POST">
-            <div class="input-group">
-                <label for="nombre">Nombre en la tarjeta</label>
-                <input type="text" id="nombre" placeholder="" required>
-            </div>
-
-            <div class="input-group">
-                <label for="tarjeta">Número de tarjeta</label>
-                <input type="text" id="tarjeta" placeholder="" required>
-            </div>
-
-            <div class="fila">
+    <section class="contenedor-principal">
+        <div class="contenedor-pago">
+            <h2>Pago Seguro</h2>
+            <form action="#" method="POST">
                 <div class="input-group">
-                    <label for="expiracion">Fecha de expiración</label>
-                    <input type="date" id="expiracion" required>
+                    <label for="nombre">Nombre en la tarjeta</label>
+                    <input type="text" id="nombre" placeholder="" required>
                 </div>
 
                 <div class="input-group">
-                    <label for="cvv">CVV</label>
-                    <input type="text" id="cvv" placeholder="123" required>
+                    <label for="tarjeta">Número de tarjeta</label>
+                    <input type="text" id="tarjeta" placeholder="" required>
                 </div>
-            </div>
-            <a href="/INDEX/menu.html"><button class="back-button"> Volver</button></a>
-            <button type="submit" class="boton-pagar">Pagar</button>
-        </form>
-    </div>
+
+                <div class="fila">
+                    <div class="input-group">
+                        <label for="expiracion">Fecha de expiración</label>
+                        <input type="date" id="expiracion" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123" required>
+                    </div>
+                </div>
+                <a href="/INDEX/menu.html"><button class="back-button"> Volver</button></a>
+                <button type="submit" class="boton-pagar">Pagar</button>
+            </form>
+        </div>
+    </section>    
     <hr class="salto">
     <footer>
         <footer class="footer">

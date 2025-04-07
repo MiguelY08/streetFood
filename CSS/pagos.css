@@ -159,7 +159,7 @@ body{
     justify-content: center;
     width: 100%;
     height: 80px;
-    margin-top: 180px;
+    margin-top: 150px;
 }
 
 .salto{
@@ -171,11 +171,12 @@ body{
     border: 1px solid #EC3337;
     margin-top: px;
 }
-.carrito{
-    width: 10px;
-    padding-right: 100px;
+.carrito img{
+    width: 50px;
 }
-
+.carrito{
+    padding-left: 100px;
+}
 
 /* PAGOS */
 
