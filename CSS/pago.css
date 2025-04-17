@@ -8,17 +8,18 @@
  PARTE SUPERIOR
 
 body{
-    background: url('/IMAGENES/madera2.jpg') no-repeat center center fixed;
-    background-size: cover;
+    margin: 0 auto;
+    padding: 0 ;
+    
 }
 
 /* Header */
 .header {
-     position: fixed; /* Fija el nav en la parte superior */
-     top: 0; /* Lo mantiene en la parte superior */
+    position: fixed; /* Fija el nav en la parte superior */
+    top: 0; /* Lo mantiene en la parte superior */
     left: 0;
-    width: 100%; /* Ocupa todo el ancho */
-    background-color: #800000; /* Mantiene el color del navbar */
+    width: 100%; 
+    background-color: #800000; 
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -122,12 +123,12 @@ body{
 /* Contenedor de pago */
 .contenedor-principal{
     background: url('/IMAGENES/madera2.jpg');
-    background-size: contain;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-bottom: 50px;
+    margin-bottom: -72px;
 }
 .contenedor-pago {
     background: white;
@@ -135,7 +136,7 @@ body{
     border-radius: 10px;
     text-align: center;
     width: 400px;
-    margin: 80px auto 20px auto;
+    margin: 40px auto 0 auto;
 }
 .carrito {
     width: 10px;
@@ -205,9 +206,10 @@ h2 {
 .footer {
     background-color: #800000; 
     color: white;
-    padding: 20px 0;
     text-align: center;
     padding: 40px 0;
+    width: 100%;
+    
 }
 
 .footer-container {
@@ -226,7 +228,7 @@ h2 {
 .footer-info p, .footer-info a {
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .footer-info a:hover {
@@ -237,10 +239,15 @@ h2 {
     margin: 0 10px;
     display: inline-block;
 }
+.footer-social h2 {
+    padding-bottom: 15px;
+    color: white;
+}
+
 
 .footer-social img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     transition: transform 0.3s ease;
 }
 

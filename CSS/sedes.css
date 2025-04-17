@@ -143,6 +143,7 @@ body{
 .contenedor-puntos h1{
     font-size: 40px;
     padding-bottom: 60px;
+    color: white;
 }
 
 .contenedor-puntos{
@@ -160,7 +161,7 @@ body{
 
 .contenedor-puntos  li a {
     text-decoration: none;
-    color: black;
+    color: white;
     cursor: pointer;
     
 }
@@ -174,7 +175,7 @@ body{
 }
 
 .contenedor-puntos a:hover {
-    color: white;
+    color: black;
 }
 /* PARTE INFERIOR FOODER */
 .footer {
@@ -201,7 +202,7 @@ body{
 .footer-info p, .footer-info a {
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .footer-info a:hover {
@@ -212,10 +213,14 @@ body{
     margin: 0 10px;
     display: inline-block;
 }
+.footer-social h2 {
+    padding-bottom: 15px;
+}
+
 
 .footer-social img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     transition: transform 0.3s ease;
 }
 
